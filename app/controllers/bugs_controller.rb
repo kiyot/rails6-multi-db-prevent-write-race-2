@@ -12,6 +12,7 @@ class BugsController < ApplicationController
   end
 
   def write
+    sleep 5
     SomeModel.create!
     render plain: 'Successful!'
   end
